@@ -33,3 +33,44 @@ for n in numArr {
     }
     print(n)
 }
+
+// rawValue사용         // for문 사용 가능
+enum Network1: String, CaseIterable {
+    case cellular = "Cel"
+    case wifi = "Wifi"
+    case bluetooth = "Blue"
+}
+print(Network1.wifi.rawValue) // "Wifi"
+
+for networt in Network1.allCases {
+    print(networt)
+} // cellular wifi bluetooth
+
+enum Network2: Int, CaseIterable {
+    case cellular
+    case wifi
+    case bluetooth
+    
+    var name: String {
+        switch self {
+        case .wifi:
+            return "Wifi"
+        case .cellular:
+            return "cel"
+        case.bluetooth:
+            return "blue"
+        }
+    }
+    func funcName() -> String {
+        switch self {
+        case .wifi:
+            return "Wifi"
+        case .cellular:
+            return "cel"
+        case.bluetooth:
+            return "blue"
+        }
+    }
+}
+let m: Network2
+

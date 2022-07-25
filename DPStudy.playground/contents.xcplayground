@@ -5,5 +5,10 @@
         <page name='Array'/>
         <page name='If,Guard'/>
         <page name='Switch,Enum'/>
+        <page name='Optional'/>
+        <page name='Enum'/>
+        <page name='Property'/>
+        <page name='Closure'/>
+        <page name='inout'/>
     </pages>
 </playground>

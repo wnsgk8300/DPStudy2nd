@@ -1,9 +1,8 @@
 import UIKit
 
-var greeting = "Hello, playground"
-
 // 참조, Reference, 주소를 저장
 class Person {
+    
     var name: String
     var age: Int
     
@@ -67,3 +66,22 @@ let car2 = car
 car.brand = "B"
 print(car2.brand) //A
 
+class Game {
+    let price: Int
+    let recommend: String
+    init(price: Int, recommend: String) {
+        self.price = price
+        self.recommend = recommend
+    }
+    func buy() -> Bool {
+        if price == 10 && recommend == "good" {
+            return true
+        } else {
+            return false
+        }
+    }
+}
+let g = Game(price: 10, recommend: "good")
+
+// 삼항연산자
+print(g.buy() ? print("go") : print("stop"))
