@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C5209152897D350007C5E4A /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5209142897D350007C5E4A /* RatingViewController.swift */; };
+		3C52091A2897D970007C5E4A /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5209192897D970007C5E4A /* GestureViewController.swift */; };
+		3C52091C2897E5CE007C5E4A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52091B2897E5CE007C5E4A /* CustomTableViewCell.swift */; };
+		3C52091E2897F007007C5E4A /* AddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52091D2897F007007C5E4A /* AddPlayerViewController.swift */; };
 		3C817AEB288EA1DF00FA52A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C817AEA288EA1DF00FA52A4 /* AppDelegate.swift */; };
 		3C817AED288EA1DF00FA52A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C817AEC288EA1DF00FA52A4 /* SceneDelegate.swift */; };
 		3C817AEF288EA1DF00FA52A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C817AEE288EA1DF00FA52A4 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C5209142897D350007C5E4A /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		3C5209192897D970007C5E4A /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
+		3C52091B2897E5CE007C5E4A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		3C52091D2897F007007C5E4A /* AddPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerViewController.swift; sourceTree = "<group>"; };
 		3C817AE7288EA1DF00FA52A4 /* DPStudy_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPStudy_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C817AEA288EA1DF00FA52A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C817AEC288EA1DF00FA52A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C5209162897D358007C5E4A /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				3C5209142897D350007C5E4A /* RatingViewController.swift */,
+				3C52091D2897F007007C5E4A /* AddPlayerViewController.swift */,
+				3C52091B2897E5CE007C5E4A /* CustomTableViewCell.swift */,
+				3C5209192897D970007C5E4A /* GestureViewController.swift */,
+			);
+			path = Rating;
+			sourceTree = "<group>";
+		};
 		3C817ADE288EA1DF00FA52A4 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +78,7 @@
 				3C817AEA288EA1DF00FA52A4 /* AppDelegate.swift */,
 				3C817AEC288EA1DF00FA52A4 /* SceneDelegate.swift */,
 				3C817AEE288EA1DF00FA52A4 /* ViewController.swift */,
+				3C5209162897D358007C5E4A /* Rating */,
 				3C817AF0288EA1DF00FA52A4 /* Main.storyboard */,
 				3C817AF3288EA1E100FA52A4 /* Assets.xcassets */,
 				3C817AF5288EA1E100FA52A4 /* LaunchScreen.storyboard */,
@@ -138,8 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C52091E2897F007007C5E4A /* AddPlayerViewController.swift in Sources */,
+				3C52091C2897E5CE007C5E4A /* CustomTableViewCell.swift in Sources */,
 				3C817AEF288EA1DF00FA52A4 /* ViewController.swift in Sources */,
+				3C5209152897D350007C5E4A /* RatingViewController.swift in Sources */,
 				3C817AEB288EA1DF00FA52A4 /* AppDelegate.swift in Sources */,
+				3C52091A2897D970007C5E4A /* GestureViewController.swift in Sources */,
 				3C817AED288EA1DF00FA52A4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

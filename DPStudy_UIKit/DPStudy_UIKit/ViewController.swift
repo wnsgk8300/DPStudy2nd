@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .red
         view.addSubview(label)
-        label.text = "전준하fwefwefq"
+        label.text = "전준하"
         label.textColor = .white
 //        label.frame = CGRect(x: view.frame.midX - 100, y: view.frame.midY - 50, width: 200, height: 100)
         

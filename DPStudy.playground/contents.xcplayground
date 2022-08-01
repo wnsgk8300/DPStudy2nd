@@ -10,5 +10,6 @@
         <page name='Property'/>
         <page name='Closure'/>
         <page name='inout'/>
+        <page name='TypeCasting'/>
     </pages>
 </playground>
