@@ -29,7 +29,8 @@ class RatingViewController: UIViewController {
     @objc
     func barButtonDidTapped(_ sender: UIBarButtonItem) {
         let vc = AddPlayerViewController()
-        self.present(vc, animated: true)
+        let naviVC = UINavigationController(rootViewController: vc)
+        self.present(naviVC, animated: true)
     }
 }
 

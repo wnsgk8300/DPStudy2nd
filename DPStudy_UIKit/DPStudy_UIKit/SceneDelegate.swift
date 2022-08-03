@@ -18,23 +18,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         //Rating
-//        // NavigationController
-//        let homeVC = RatingViewController()
-//        homeVC.navigationItem.title = "Players"
-//        let navVC = UINavigationController(rootViewController: homeVC)
-//
-//        // TabBarController
-//        let tabBarController = UITabBarController()
-//        let gestureVC = GestureViewController()
-//        tabBarController.viewControllers = [navVC, gestureVC]
-//
-//        navVC.tabBarItem = UITabBarItem(title: "Player", image: UIImage(systemName: "camera"), tag: 0)
-//        gestureVC.tabBarItem = UITabBarItem(title: "Gesture", image: UIImage(systemName: "flag.2.crossed.fill"), tag: 1)
-//        window?.rootViewController = tabBarController
+        // NavigationController
+        let homeVC = RatingViewController()
+        homeVC.navigationItem.title = "Players"
+        let navVC = UINavigationController(rootViewController: homeVC)
+
+        // TabBarController
+        let tabBarController = UITabBarController()
+        let gestureVC = GestureViewController()
+        tabBarController.viewControllers = [navVC, gestureVC]
+
+        navVC.tabBarItem = UITabBarItem(title: "Player", image: UIImage(systemName: "camera"), tag: 0)
+        gestureVC.tabBarItem = UITabBarItem(title: "Gesture", image: UIImage(systemName: "flag.2.crossed.fill"), tag: 1)
+        window?.rootViewController = tabBarController
         
         //Component-Starter
         // Navigation
-        window?.rootViewController = UINavigationController(rootViewController: ComponentViewController())
+//        window?.rootViewController = UINavigationController(rootViewController: ComponentViewController())
+        
+        
+        
         window?.backgroundColor = .systemBackground
         // 윈도우가 여러개일 때 이 윈도우를 Key Window로 만들겠다
         window?.makeKeyAndVisible()
