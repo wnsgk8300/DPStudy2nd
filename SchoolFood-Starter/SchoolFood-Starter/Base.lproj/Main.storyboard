@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SGc-pZ-MBf">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Order View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OrderViewController" customModule="SchoolFood_Starter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zuu-aw-Bs8">
+                                <rect key="frame" x="0.0" y="100" width="390" height="480"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" id="yCj-e8-5xk"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderTableViewCell" id="IzP-T8-Cfk" customClass="OrderTableViewCell" customModule="SchoolFood_Starter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IzP-T8-Cfk" id="B6I-xA-Jx7">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Bx-71-Qil">
+                                                    <rect key="frame" x="12" y="10" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="IXT-DW-YAw"/>
+                                                        <constraint firstAttribute="width" constant="80" id="n3c-cJ-8s3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4w8-wF-VcE">
+                                                    <rect key="frame" x="100" y="28" width="80" height="44"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqE-LO-ftb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="80" height="20.333333333333332"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zr-3g-jrG">
+                                                            <rect key="frame" x="0.0" y="28.333333333333339" width="31" height="15.666666666666668"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89x-WZ-KbI">
+                                                    <rect key="frame" x="239" y="40" width="25" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="E60-K1-jNk">
+                                                    <rect key="frame" x="276" y="34" width="94" height="32"/>
+                                                    <connections>
+                                                        <action selector="didTapStepper:" destination="IzP-T8-Cfk" eventType="valueChanged" id="xUm-WQ-IEk"/>
+                                                    </connections>
+                                                </stepper>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4Bx-71-Qil" firstAttribute="leading" secondItem="B6I-xA-Jx7" secondAttribute="leading" constant="12" id="0x7-cc-zYB"/>
+                                                <constraint firstItem="E60-K1-jNk" firstAttribute="trailing" secondItem="B6I-xA-Jx7" secondAttribute="trailingMargin" id="JnA-wO-D7c"/>
+                                                <constraint firstItem="4Bx-71-Qil" firstAttribute="centerY" secondItem="B6I-xA-Jx7" secondAttribute="centerY" id="Qpe-LN-nd9"/>
+                                                <constraint firstItem="E60-K1-jNk" firstAttribute="leading" secondItem="89x-WZ-KbI" secondAttribute="trailing" constant="12" id="baJ-PR-WnZ"/>
+                                                <constraint firstItem="89x-WZ-KbI" firstAttribute="centerY" secondItem="B6I-xA-Jx7" secondAttribute="centerY" id="bus-vr-n2v"/>
+                                                <constraint firstItem="4w8-wF-VcE" firstAttribute="leading" secondItem="4Bx-71-Qil" secondAttribute="trailing" constant="8" id="fxv-BB-gKi"/>
+                                                <constraint firstItem="4w8-wF-VcE" firstAttribute="centerY" secondItem="B6I-xA-Jx7" secondAttribute="centerY" id="h4W-cv-fsV"/>
+                                                <constraint firstItem="E60-K1-jNk" firstAttribute="centerY" secondItem="B6I-xA-Jx7" secondAttribute="centerY" id="xHZ-nN-s9s"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="countLabel" destination="89x-WZ-KbI" id="MeX-5X-wRW"/>
+                                            <outlet property="mainImageView" destination="4Bx-71-Qil" id="oqe-qx-leP"/>
+                                            <outlet property="priceLabel" destination="9zr-3g-jrG" id="v7h-oN-Pyu"/>
+                                            <outlet property="quantityStepper" destination="E60-K1-jNk" id="gGj-89-pPU"/>
+                                            <outlet property="titleLabel" destination="mqE-LO-ftb" id="lg3-tj-FHc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="KgR-Hr-POv"/>
+                                </connections>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="AM7-lS-qkZ">
+                                <rect key="frame" x="20" y="600" width="350" height="20.333333333333371"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="내 지갑:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo2-eP-nga">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="20.333333333333332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="wob-FN-f9b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0원" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CK-k0-RRa">
+                                        <rect key="frame" x="252" y="0.0" width="98" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="zLL-AN-P6u">
+                                <rect key="frame" x="20" y="640.33333333333337" width="350" height="20.333333333333371"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="최종 결제금액:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9b-R7-Koq">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="20.333333333333332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="dEk-DC-2aP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0원" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pa-e2-a5t">
+                                        <rect key="frame" x="252" y="0.0" width="98" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4y-25-5Ct">
+                                <rect key="frame" x="165" y="771" width="60.333333333333343" height="31"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="초기화">
+                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zuH-Am-yXe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zLL-AN-P6u" secondAttribute="trailing" constant="20" id="M3N-rl-HOM"/>
+                            <constraint firstItem="zLL-AN-P6u" firstAttribute="top" secondItem="AM7-lS-qkZ" secondAttribute="bottom" constant="20" id="Nmt-GB-XSZ"/>
+                            <constraint firstItem="AM7-lS-qkZ" firstAttribute="top" secondItem="Zuu-aw-Bs8" secondAttribute="bottom" constant="20" id="ZP3-tb-KQF"/>
+                            <constraint firstItem="Zuu-aw-Bs8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b4W-9r-QPO"/>
+                            <constraint firstItem="AM7-lS-qkZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bFR-Id-X2a"/>
+                            <constraint firstItem="zLL-AN-P6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bfa-BX-A7D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zuu-aw-Bs8" secondAttribute="trailing" id="inc-sZ-FNG"/>
+                            <constraint firstItem="Zuu-aw-Bs8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="lGy-UU-Wvy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AM7-lS-qkZ" secondAttribute="trailing" constant="20" id="rxn-0b-Fbs"/>
+                            <constraint firstItem="k4y-25-5Ct" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wjP-o8-rMp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k4y-25-5Ct" secondAttribute="bottom" constant="8" id="ycz-mX-i12"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1iq-f3-2GJ">
+                        <barButtonItem key="leftBarButtonItem" title="충전" id="tZX-pw-aU4">
+                            <connections>
+                                <action selector="didTapWalletBarButtonItem:" destination="BYZ-38-t0r" id="klR-Rb-1Ah"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="결제" id="KXK-tF-Wb0">
+                            <connections>
+                                <action selector="didTapPayBarButtonItem:" destination="BYZ-38-t0r" id="x9h-ni-2cW"/>
+                            </connections>
+                        </barButtonItem>
+                        <connections>
+                            <outlet property="titleView" destination="QQA-v4-QdW" id="XF9-31-K1O"/>
+                        </connections>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="orderTableView" destination="Zuu-aw-Bs8" id="3iL-9Q-u6S"/>
+                        <outlet property="totalPriceLabel" destination="5pa-e2-a5t" id="HxR-aB-mK0"/>
+                        <outlet property="walletLabel" destination="4CK-k0-RRa" id="qBH-pO-U8g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SchoolFood-Logo" id="QQA-v4-QdW">
+                    <rect key="frame" x="0.0" y="0.0" width="350" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </objects>
+            <point key="canvasLocation" x="979.71014492753636" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pj0-eu-4QO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SGc-pZ-MBf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MCA-q9-9EZ">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OzA-e7-azb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wUT-mL-l9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SchoolFood-Logo" width="102.5" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

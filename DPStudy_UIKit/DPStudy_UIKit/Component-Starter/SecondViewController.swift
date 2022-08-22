@@ -22,7 +22,7 @@ class SecondViewController: UIViewController {
         let alertController = UIAlertController(title: "경고", message: "마지막 화면입니다.", preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "취소", style: .cancel)
         let okACtion = UIAlertAction(title: "확인", style: .default) { _ in
-            print(alertController.textFields?.first?.text)
+            print("\(String(describing: alertController.textFields?.first?.text))")
         }
         alertController.addAction(cancelAction)
         alertController.addAction(okACtion)
