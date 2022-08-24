@@ -14,6 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowSecne = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowSecne)
+        let vc = FirstDelegateViewController()
         
         
         //Rating
@@ -35,7 +36,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Navigation
 //        window?.rootViewController = UINavigationController(rootViewController: ComponentViewController())
         
-        let vc = FirstDelegateViewController()
         window?.rootViewController = vc
         
         window?.backgroundColor = .systemBackground

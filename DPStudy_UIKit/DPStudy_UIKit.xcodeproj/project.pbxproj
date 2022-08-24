@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C2ADE3428B6350000EFD1D2 /* SingletonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2ADE3328B6350000EFD1D2 /* SingletonExample.swift */; };
 		3C5209152897D350007C5E4A /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5209142897D350007C5E4A /* RatingViewController.swift */; };
 		3C52091A2897D970007C5E4A /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5209192897D970007C5E4A /* GestureViewController.swift */; };
 		3C52091C2897E5CE007C5E4A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52091B2897E5CE007C5E4A /* CustomTableViewCell.swift */; };
@@ -24,9 +25,12 @@
 		3CA6630D289A8EE700D7C036 /* AddPlayerTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA6630C289A8EE700D7C036 /* AddPlayerTextFieldTableViewCell.swift */; };
 		3CF8A10B28B3943E00F7E86C /* FirstDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8A10A28B3943E00F7E86C /* FirstDelegateViewController.swift */; };
 		3CF8A10D28B3944900F7E86C /* SecondDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8A10C28B3944900F7E86C /* SecondDelegateViewController.swift */; };
+		3CF8A11028B6208500F7E86C /* UserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8A10F28B6208500F7E86C /* UserDefaultsViewController.swift */; };
+		3CF8A11328B6283C00F7E86C /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8A11228B6283C00F7E86C /* AnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C2ADE3328B6350000EFD1D2 /* SingletonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonExample.swift; sourceTree = "<group>"; };
 		3C5209142897D350007C5E4A /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		3C5209192897D970007C5E4A /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
 		3C52091B2897E5CE007C5E4A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 		3CA6630C289A8EE700D7C036 /* AddPlayerTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerTextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		3CF8A10A28B3943E00F7E86C /* FirstDelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDelegateViewController.swift; sourceTree = "<group>"; };
 		3CF8A10C28B3944900F7E86C /* SecondDelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDelegateViewController.swift; sourceTree = "<group>"; };
+		3CF8A10F28B6208500F7E86C /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
+		3CF8A11228B6283C00F7E86C /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,13 +77,13 @@
 			path = Rating;
 			sourceTree = "<group>";
 		};
-		3C5C213C28B37D9800AB2265 /* CollectionView */ = {
+		3C5C213C28B37D9800AB2265 /* 0822CollectionView */ = {
 			isa = PBXGroup;
 			children = (
 				3C5C213D28B37DB200AB2265 /* CollectionViewStudyViewController.swift */,
 				3C5C214628B3888900AB2265 /* CustomCollectionViewCell.swift */,
 			);
-			path = CollectionView;
+			path = 0822CollectionView;
 			sourceTree = "<group>";
 		};
 		3C817ADE288EA1DF00FA52A4 = {
@@ -102,8 +108,11 @@
 				3C817AEA288EA1DF00FA52A4 /* AppDelegate.swift */,
 				3C817AEC288EA1DF00FA52A4 /* SceneDelegate.swift */,
 				3C817AEE288EA1DF00FA52A4 /* ViewController.swift */,
-				3CF8A10928B3942700F7E86C /* DelegateStudy */,
-				3C5C213C28B37D9800AB2265 /* CollectionView */,
+				3C2ADE3328B6350000EFD1D2 /* SingletonExample.swift */,
+				3CF8A11128B6282200F7E86C /* 0824Animation */,
+				3CF8A10E28B6205700F7E86C /* 0824UserDefaults */,
+				3CF8A10928B3942700F7E86C /* 0822DelegateStudy */,
+				3C5C213C28B37D9800AB2265 /* 0822CollectionView */,
 				3C5209162897D358007C5E4A /* Rating */,
 				3CA66307289A737100D7C036 /* Component-Starter */,
 				3C817AF3288EA1E100FA52A4 /* Assets.xcassets */,
@@ -122,13 +131,29 @@
 			path = "Component-Starter";
 			sourceTree = "<group>";
 		};
-		3CF8A10928B3942700F7E86C /* DelegateStudy */ = {
+		3CF8A10928B3942700F7E86C /* 0822DelegateStudy */ = {
 			isa = PBXGroup;
 			children = (
 				3CF8A10A28B3943E00F7E86C /* FirstDelegateViewController.swift */,
 				3CF8A10C28B3944900F7E86C /* SecondDelegateViewController.swift */,
 			);
-			path = DelegateStudy;
+			path = 0822DelegateStudy;
+			sourceTree = "<group>";
+		};
+		3CF8A10E28B6205700F7E86C /* 0824UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				3CF8A10F28B6208500F7E86C /* UserDefaultsViewController.swift */,
+			);
+			path = 0824UserDefaults;
+			sourceTree = "<group>";
+		};
+		3CF8A11128B6282200F7E86C /* 0824Animation */ = {
+			isa = PBXGroup;
+			children = (
+				3CF8A11228B6283C00F7E86C /* AnimationViewController.swift */,
+			);
+			path = 0824Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,9 +235,12 @@
 				3C52091E2897F007007C5E4A /* AddPlayerViewController.swift in Sources */,
 				3C52091C2897E5CE007C5E4A /* CustomTableViewCell.swift in Sources */,
 				3CA66309289A73A100D7C036 /* ComponentViewController.swift in Sources */,
+				3C2ADE3428B6350000EFD1D2 /* SingletonExample.swift in Sources */,
 				3CA6630B289A7B8E00D7C036 /* SecondViewController.swift in Sources */,
 				3CA6630D289A8EE700D7C036 /* AddPlayerTextFieldTableViewCell.swift in Sources */,
 				3C5C213E28B37DB200AB2265 /* CollectionViewStudyViewController.swift in Sources */,
+				3CF8A11028B6208500F7E86C /* UserDefaultsViewController.swift in Sources */,
+				3CF8A11328B6283C00F7E86C /* AnimationViewController.swift in Sources */,
 				3C817AEF288EA1DF00FA52A4 /* ViewController.swift in Sources */,
 				3C5C214728B3888900AB2265 /* CustomCollectionViewCell.swift in Sources */,
 				3C5209152897D350007C5E4A /* RatingViewController.swift in Sources */,
