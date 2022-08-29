@@ -20,6 +20,8 @@
 		3C817AEF288EA1DF00FA52A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C817AEE288EA1DF00FA52A4 /* ViewController.swift */; };
 		3C817AF4288EA1E100FA52A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C817AF3288EA1E100FA52A4 /* Assets.xcassets */; };
 		3C817AF7288EA1E100FA52A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C817AF5288EA1E100FA52A4 /* LaunchScreen.storyboard */; };
+		3C9FBB0B28BCBEC400E502C9 /* AnimationAdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FBB0A28BCBEC400E502C9 /* AnimationAdvancedViewController.swift */; };
+		3C9FBB0E28BCCB1E00E502C9 /* PropertyAnimatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FBB0D28BCCB1E00E502C9 /* PropertyAnimatorViewController.swift */; };
 		3CA66309289A73A100D7C036 /* ComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA66308289A73A100D7C036 /* ComponentViewController.swift */; };
 		3CA6630B289A7B8E00D7C036 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA6630A289A7B8E00D7C036 /* SecondViewController.swift */; };
 		3CA6630D289A8EE700D7C036 /* AddPlayerTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA6630C289A8EE700D7C036 /* AddPlayerTextFieldTableViewCell.swift */; };
@@ -44,6 +46,8 @@
 		3C817AF3288EA1E100FA52A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C817AF6288EA1E100FA52A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C817AF8288EA1E100FA52A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C9FBB0A28BCBEC400E502C9 /* AnimationAdvancedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationAdvancedViewController.swift; sourceTree = "<group>"; };
+		3C9FBB0D28BCCB1E00E502C9 /* PropertyAnimatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimatorViewController.swift; sourceTree = "<group>"; };
 		3CA66308289A73A100D7C036 /* ComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentViewController.swift; sourceTree = "<group>"; };
 		3CA6630A289A7B8E00D7C036 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3CA6630C289A8EE700D7C036 /* AddPlayerTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerTextFieldTableViewCell.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				3C817AEC288EA1DF00FA52A4 /* SceneDelegate.swift */,
 				3C817AEE288EA1DF00FA52A4 /* ViewController.swift */,
 				3C2ADE3328B6350000EFD1D2 /* SingletonExample.swift */,
+				3C9FBB0C28BCCB0000E502C9 /* 0829PropertyAnimator */,
+				3C9FBB0928BCBEA600E502C9 /* 0829AnimationAdvanced */,
 				3CF8A11128B6282200F7E86C /* 0824Animation */,
 				3CF8A10E28B6205700F7E86C /* 0824UserDefaults */,
 				3CF8A10928B3942700F7E86C /* 0822DelegateStudy */,
@@ -120,6 +126,22 @@
 				3C817AF8288EA1E100FA52A4 /* Info.plist */,
 			);
 			path = DPStudy_UIKit;
+			sourceTree = "<group>";
+		};
+		3C9FBB0928BCBEA600E502C9 /* 0829AnimationAdvanced */ = {
+			isa = PBXGroup;
+			children = (
+				3C9FBB0A28BCBEC400E502C9 /* AnimationAdvancedViewController.swift */,
+			);
+			path = 0829AnimationAdvanced;
+			sourceTree = "<group>";
+		};
+		3C9FBB0C28BCCB0000E502C9 /* 0829PropertyAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				3C9FBB0D28BCCB1E00E502C9 /* PropertyAnimatorViewController.swift */,
+			);
+			path = 0829PropertyAnimator;
 			sourceTree = "<group>";
 		};
 		3CA66307289A737100D7C036 /* Component-Starter */ = {
@@ -249,6 +271,8 @@
 				3CF8A10B28B3943E00F7E86C /* FirstDelegateViewController.swift in Sources */,
 				3C52091A2897D970007C5E4A /* GestureViewController.swift in Sources */,
 				3C817AED288EA1DF00FA52A4 /* SceneDelegate.swift in Sources */,
+				3C9FBB0B28BCBEC400E502C9 /* AnimationAdvancedViewController.swift in Sources */,
+				3C9FBB0E28BCCB1E00E502C9 /* PropertyAnimatorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
