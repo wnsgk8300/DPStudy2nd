@@ -11,5 +11,6 @@
         <page name='Closure'/>
         <page name='inout'/>
         <page name='TypeCasting'/>
+        <page name='HigherOrderFunctions'/>
     </pages>
 </playground>
