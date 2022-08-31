@@ -22,6 +22,11 @@
 		3C817AF7288EA1E100FA52A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C817AF5288EA1E100FA52A4 /* LaunchScreen.storyboard */; };
 		3C9FBB0B28BCBEC400E502C9 /* AnimationAdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FBB0A28BCBEC400E502C9 /* AnimationAdvancedViewController.swift */; };
 		3C9FBB0E28BCCB1E00E502C9 /* PropertyAnimatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FBB0D28BCCB1E00E502C9 /* PropertyAnimatorViewController.swift */; };
+		3C9FBB1128BF65D900E502C9 /* URLSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FBB1028BF65D900E502C9 /* URLSessionViewController.swift */; };
+		3C9FBB1428BF6F2F00E502C9 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FBB1328BF6F2F00E502C9 /* WeatherInfo.swift */; };
+		3C9FBB1628BF6F8A00E502C9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FBB1528BF6F8A00E502C9 /* NetworkService.swift */; };
+		3C9FBB1828BF702600E502C9 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FBB1728BF702600E502C9 /* URL+Extensions.swift */; };
+		3C9FBB1A28BF73D400E502C9 /* OpenWeatherJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FBB1928BF73D400E502C9 /* OpenWeatherJsonData.swift */; };
 		3CA66309289A73A100D7C036 /* ComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA66308289A73A100D7C036 /* ComponentViewController.swift */; };
 		3CA6630B289A7B8E00D7C036 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA6630A289A7B8E00D7C036 /* SecondViewController.swift */; };
 		3CA6630D289A8EE700D7C036 /* AddPlayerTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA6630C289A8EE700D7C036 /* AddPlayerTextFieldTableViewCell.swift */; };
@@ -48,6 +53,11 @@
 		3C817AF8288EA1E100FA52A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C9FBB0A28BCBEC400E502C9 /* AnimationAdvancedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationAdvancedViewController.swift; sourceTree = "<group>"; };
 		3C9FBB0D28BCCB1E00E502C9 /* PropertyAnimatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimatorViewController.swift; sourceTree = "<group>"; };
+		3C9FBB1028BF65D900E502C9 /* URLSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionViewController.swift; sourceTree = "<group>"; };
+		3C9FBB1328BF6F2F00E502C9 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		3C9FBB1528BF6F8A00E502C9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3C9FBB1728BF702600E502C9 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		3C9FBB1928BF73D400E502C9 /* OpenWeatherJsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherJsonData.swift; sourceTree = "<group>"; };
 		3CA66308289A73A100D7C036 /* ComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentViewController.swift; sourceTree = "<group>"; };
 		3CA6630A289A7B8E00D7C036 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3CA6630C289A8EE700D7C036 /* AddPlayerTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerTextFieldTableViewCell.swift; sourceTree = "<group>"; };
@@ -109,10 +119,7 @@
 		3C817AE9288EA1DF00FA52A4 /* DPStudy_UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				3C817AEA288EA1DF00FA52A4 /* AppDelegate.swift */,
-				3C817AEC288EA1DF00FA52A4 /* SceneDelegate.swift */,
-				3C817AEE288EA1DF00FA52A4 /* ViewController.swift */,
-				3C2ADE3328B6350000EFD1D2 /* SingletonExample.swift */,
+				3C9FBB0F28BF65BF00E502C9 /* 0831URLSession */,
 				3C9FBB0C28BCCB0000E502C9 /* 0829PropertyAnimator */,
 				3C9FBB0928BCBEA600E502C9 /* 0829AnimationAdvanced */,
 				3CF8A11128B6282200F7E86C /* 0824Animation */,
@@ -121,6 +128,10 @@
 				3C5C213C28B37D9800AB2265 /* 0822CollectionView */,
 				3C5209162897D358007C5E4A /* Rating */,
 				3CA66307289A737100D7C036 /* Component-Starter */,
+				3C817AEA288EA1DF00FA52A4 /* AppDelegate.swift */,
+				3C817AEC288EA1DF00FA52A4 /* SceneDelegate.swift */,
+				3C817AEE288EA1DF00FA52A4 /* ViewController.swift */,
+				3C2ADE3328B6350000EFD1D2 /* SingletonExample.swift */,
 				3C817AF3288EA1E100FA52A4 /* Assets.xcassets */,
 				3C817AF5288EA1E100FA52A4 /* LaunchScreen.storyboard */,
 				3C817AF8288EA1E100FA52A4 /* Info.plist */,
@@ -142,6 +153,26 @@
 				3C9FBB0D28BCCB1E00E502C9 /* PropertyAnimatorViewController.swift */,
 			);
 			path = 0829PropertyAnimator;
+			sourceTree = "<group>";
+		};
+		3C9FBB0F28BF65BF00E502C9 /* 0831URLSession */ = {
+			isa = PBXGroup;
+			children = (
+				3C9FBB1528BF6F8A00E502C9 /* NetworkService.swift */,
+				3C9FBB1728BF702600E502C9 /* URL+Extensions.swift */,
+				3C9FBB1928BF73D400E502C9 /* OpenWeatherJsonData.swift */,
+				3C9FBB1228BF6F1F00E502C9 /* Model */,
+				3C9FBB1028BF65D900E502C9 /* URLSessionViewController.swift */,
+			);
+			path = 0831URLSession;
+			sourceTree = "<group>";
+		};
+		3C9FBB1228BF6F1F00E502C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C9FBB1328BF6F2F00E502C9 /* WeatherInfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		3CA66307289A737100D7C036 /* Component-Starter */ = {
@@ -254,21 +285,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9FBB1628BF6F8A00E502C9 /* NetworkService.swift in Sources */,
 				3C52091E2897F007007C5E4A /* AddPlayerViewController.swift in Sources */,
 				3C52091C2897E5CE007C5E4A /* CustomTableViewCell.swift in Sources */,
 				3CA66309289A73A100D7C036 /* ComponentViewController.swift in Sources */,
 				3C2ADE3428B6350000EFD1D2 /* SingletonExample.swift in Sources */,
+				3C9FBB1828BF702600E502C9 /* URL+Extensions.swift in Sources */,
 				3CA6630B289A7B8E00D7C036 /* SecondViewController.swift in Sources */,
 				3CA6630D289A8EE700D7C036 /* AddPlayerTextFieldTableViewCell.swift in Sources */,
 				3C5C213E28B37DB200AB2265 /* CollectionViewStudyViewController.swift in Sources */,
 				3CF8A11028B6208500F7E86C /* UserDefaultsViewController.swift in Sources */,
+				3C9FBB1A28BF73D400E502C9 /* OpenWeatherJsonData.swift in Sources */,
 				3CF8A11328B6283C00F7E86C /* AnimationViewController.swift in Sources */,
 				3C817AEF288EA1DF00FA52A4 /* ViewController.swift in Sources */,
 				3C5C214728B3888900AB2265 /* CustomCollectionViewCell.swift in Sources */,
 				3C5209152897D350007C5E4A /* RatingViewController.swift in Sources */,
 				3CF8A10D28B3944900F7E86C /* SecondDelegateViewController.swift in Sources */,
 				3C817AEB288EA1DF00FA52A4 /* AppDelegate.swift in Sources */,
+				3C9FBB1428BF6F2F00E502C9 /* WeatherInfo.swift in Sources */,
 				3CF8A10B28B3943E00F7E86C /* FirstDelegateViewController.swift in Sources */,
+				3C9FBB1128BF65D900E502C9 /* URLSessionViewController.swift in Sources */,
 				3C52091A2897D970007C5E4A /* GestureViewController.swift in Sources */,
 				3C817AED288EA1DF00FA52A4 /* SceneDelegate.swift in Sources */,
 				3C9FBB0B28BCBEC400E502C9 /* AnimationAdvancedViewController.swift in Sources */,
