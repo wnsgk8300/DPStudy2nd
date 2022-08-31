@@ -8,6 +8,6 @@
 import Foundation
 
 extension URL {
-    static let weather = "https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=ae54862e80cd4582519f9266c3359724"
+    static let weather = "https://api.openweathermap.org/data/2.5/weather?q=seoul&appid={api}"
 
 }
