@@ -23,6 +23,7 @@
 		3C817AF7288EA1E100FA52A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C817AF5288EA1E100FA52A4 /* LaunchScreen.storyboard */; };
 		3C89997A28D86EF3008E6988 /* AsyncAwaitNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89997928D86EF3008E6988 /* AsyncAwaitNetworkService.swift */; };
 		3C89997C28D871D2008E6988 /* AsyncAwaitNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89997B28D871D2008E6988 /* AsyncAwaitNetworkError.swift */; };
+		3C89997F28DB1524008E6988 /* FileManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89997E28DB1524008E6988 /* FileManagerViewController.swift */; };
 		3C9FBB0B28BCBEC400E502C9 /* AnimationAdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FBB0A28BCBEC400E502C9 /* AnimationAdvancedViewController.swift */; };
 		3C9FBB0E28BCCB1E00E502C9 /* PropertyAnimatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FBB0D28BCCB1E00E502C9 /* PropertyAnimatorViewController.swift */; };
 		3C9FBB1128BF65D900E502C9 /* URLSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FBB1028BF65D900E502C9 /* URLSessionViewController.swift */; };
@@ -67,6 +68,7 @@
 		3C817AF8288EA1E100FA52A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C89997928D86EF3008E6988 /* AsyncAwaitNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitNetworkService.swift; sourceTree = "<group>"; };
 		3C89997B28D871D2008E6988 /* AsyncAwaitNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitNetworkError.swift; sourceTree = "<group>"; };
+		3C89997E28DB1524008E6988 /* FileManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerViewController.swift; sourceTree = "<group>"; };
 		3C9FBB0A28BCBEC400E502C9 /* AnimationAdvancedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationAdvancedViewController.swift; sourceTree = "<group>"; };
 		3C9FBB0D28BCCB1E00E502C9 /* PropertyAnimatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimatorViewController.swift; sourceTree = "<group>"; };
 		3C9FBB1028BF65D900E502C9 /* URLSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		3C817AE9288EA1DF00FA52A4 /* DPStudy_UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3C89997D28DB14FD008E6988 /* 0921FileManager */,
 				3CEA6D3F28D8695900B7CEB4 /* 0919AsyncAwait */,
 				3CA54D1028D1DF2200952AAE /* 0914InfiniteScroll */,
 				3CA54D0D28D1CE0700952AAE /* 0914CollapsedTableview */,
@@ -178,6 +181,14 @@
 				3C817AF8288EA1E100FA52A4 /* Info.plist */,
 			);
 			path = DPStudy_UIKit;
+			sourceTree = "<group>";
+		};
+		3C89997D28DB14FD008E6988 /* 0921FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				3C89997E28DB1524008E6988 /* FileManagerViewController.swift */,
+			);
+			path = 0921FileManager;
 			sourceTree = "<group>";
 		};
 		3C9FBB0928BCBEA600E502C9 /* 0829AnimationAdvanced */ = {
@@ -406,6 +417,7 @@
 				3C52091A2897D970007C5E4A /* GestureViewController.swift in Sources */,
 				3C817AED288EA1DF00FA52A4 /* SceneDelegate.swift in Sources */,
 				3C89997A28D86EF3008E6988 /* AsyncAwaitNetworkService.swift in Sources */,
+				3C89997F28DB1524008E6988 /* FileManagerViewController.swift in Sources */,
 				3C9FBB0B28BCBEC400E502C9 /* AnimationAdvancedViewController.swift in Sources */,
 				3CEA6D4328D86C2D00B7CEB4 /* Quotes.swift in Sources */,
 				3C9FBB0E28BCCB1E00E502C9 /* PropertyAnimatorViewController.swift in Sources */,
