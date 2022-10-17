@@ -19,5 +19,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>이 앱에서 위치 수정 허용?</string>
 </dict>
 </plist>

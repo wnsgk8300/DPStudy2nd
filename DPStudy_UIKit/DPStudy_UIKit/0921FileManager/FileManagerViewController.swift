@@ -109,6 +109,9 @@ extension FileManagerViewController {
     }
 }
 
+// 쓸일이 종종 있으므로 알아둘 필요가 있다
+// userDefaults는 보통 2mb미만의 데이터만 저장하는게 좋다
+// Core Data는 DB형식으로 필요할 때 사용하면 좋음
 extension FileManagerViewController {
     
     func getDocumentDirectoryPath() -> URL {
@@ -157,6 +160,7 @@ extension FileManagerViewController {
     }
 }
 
+// class에 codable을 넣을 수 없을때 NSSecureCodingdmf TMsek
 class Person: NSObject, NSCoding, NSSecureCoding {
     
     static var supportsSecureCoding: Bool = true
