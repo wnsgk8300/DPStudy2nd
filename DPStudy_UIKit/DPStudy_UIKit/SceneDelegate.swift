@@ -50,7 +50,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        // Navigation
 ////        window?.rootViewController = UINavigationController(rootViewController: ComponentViewController())
 //
-        window?.rootViewController = CombineViewController()
+        window?.rootViewController = PreprocessorViewController()
         
         // 윈도우가 여러개일 때 이 윈도우를 Key Window로 만들겠다
         window?.makeKeyAndVisible()
