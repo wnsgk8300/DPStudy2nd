@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iMp-Wm-Szw">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -40,6 +40,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="33" y="-27"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="cVE-Ug-vwZ">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="iMp-Wm-Szw" customClass="SecondViewController" customModule="xibStarter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nku-44-dg6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNc-dN-eyq" customClass="CustomUIView" customModule="xibStarter" customModuleProvider="target">
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="UAQ-ZW-TgX"/>
+                                    <constraint firstAttribute="height" constant="128" id="Vcd-6n-seN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GxA-13-neP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HNc-dN-eyq" firstAttribute="top" secondItem="GxA-13-neP" secondAttribute="top" constant="303" id="1Cw-qd-Lo2"/>
+                            <constraint firstItem="GxA-13-neP" firstAttribute="bottom" secondItem="HNc-dN-eyq" secondAttribute="bottom" constant="328" id="YJS-PZ-HQy"/>
+                            <constraint firstItem="HNc-dN-eyq" firstAttribute="leading" secondItem="GxA-13-neP" secondAttribute="leading" constant="76" id="ggo-GF-RsE"/>
+                            <constraint firstItem="GxA-13-neP" firstAttribute="trailing" secondItem="HNc-dN-eyq" secondAttribute="trailing" constant="77" id="lcb-JZ-zyN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CustomUIView" destination="HNc-dN-eyq" id="LhL-Qw-S5b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4QH-ia-eNw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="-27"/>
         </scene>
     </scenes>
     <resources>
